@@ -53,15 +53,59 @@ const users = [
 
 // console.log(users[1].email);  // accessing the array of objects
 
-console.log(Object.keys(tinderUser)); //this will give you all the keys inside the tinderUser object
+// console.log(Object.keys(tinderUser)); //this will give you all the keys inside the tinderUser object
 
 //  the synatax is Object.keys(or iske under jo object ki keys chahiye uska name)
 
-console.log(Object.values(tinderUser)); // giving values
+// console.log(Object.values(tinderUser)); // giving values
 
 
-console.log(Object.entries(tinderUser)); // giving keys and value in the array of array form
+// console.log(Object.entries(tinderUser)); // giving keys and value in the array of array form
 
 
 // kahi bar kya hota h apan array loop through krte h or ek value nikalte h to kahi bar vo value exist hi nhi krti to crashed hone ke chances rehte h to usse bachne ke liye apn Object.hasOwnProperty use krte h jo ki output boolean terms me deta h .
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+// Object destructring
+
+const course = {
+    course : "B.Tech",
+    Branach : "CSE",
+    courseInstructor: "Yash"
+}
+
+// console.log(course.courseInstructor); // how we access normally
+
+
+// but in Js we can do object destructring
+// and we can do in react also the destructring
+
+// const {courseInstructor} = course 
+
+//  the syntax if const {key} = object name (konse object me se krna h )
+
+// or another way to destructure
+
+const {courseInstructor : instructor} = course  // we can do in the short form too
+
+console.log(instructor);
+
+
+// JSON = javascript object notation 
+
+// object ko json format me bhejna pdta h  
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+  
+// this is also in the JSON format but in array form
+
+[
+    {},
+    {},
+    {}
+]
